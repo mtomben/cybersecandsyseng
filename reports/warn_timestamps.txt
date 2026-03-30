@@ -1,0 +1,1 @@
+../logs/sat-001.log:WARN

@@ -1,0 +1,4 @@
+Total log entries: 1
+Total ERROR events: 0
+Total WARN events: 1
+Total INFO events: 0

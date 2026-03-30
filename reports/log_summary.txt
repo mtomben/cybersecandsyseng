@@ -1,0 +1,6 @@
+ORION LOG SUMMARY
+Total log entries: 1
+INFO events: 0
+WARN events: 1
+ERROR events: 0
+Less stable satellite: Equal stability
