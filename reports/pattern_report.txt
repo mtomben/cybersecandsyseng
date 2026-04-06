@@ -1,0 +1,5 @@
+PATTERN REPORT: ERROR
+sat-001-backup.log: 1
+sat-001.log: 9
+sat-002.log: 14
+sat-003.log: 0

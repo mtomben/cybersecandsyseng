@@ -1,0 +1,7 @@
+MISSION REPORT
+Processed files: 0
+Total entries: 0
+INFO: 0
+WARN: 0
+ERROR: 0
+Most unstable log: 
