@@ -1,0 +1,11 @@
+MISSION RUNTIME SECURITY REPORT
+Generated at: 2026-04-20_21-13-41 [cite: 320, 326]
+------------------------------
+Processed log files: 4 [cite: 312, 327]
+Active processes: 287 [cite: 313, 328]
+Unauthorized processes: 278 [cite: 314, 329]
+High CPU processes: 1 [cite: 315, 330]
+ERROR entries: 24 [cite: 316, 331]
+Most unstable log:  [cite: 317, 332]
+Top CPU process: yes [cite: 318, 333]
+Incident classification: CRITICAL [cite: 319, 334]

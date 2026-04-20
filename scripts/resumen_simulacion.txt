@@ -1,0 +1,7 @@
+Actividad de Simulación
+$
+cd orion-system
+chmod +x *.sh
+chmod +x *.sh
+./run_process_simulation.sh
+./stop_process_simulation.sh

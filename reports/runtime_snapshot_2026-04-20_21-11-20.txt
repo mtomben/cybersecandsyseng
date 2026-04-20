@@ -1,0 +1,306 @@
+========================================
+Runtime Security Snapshot
+========================================
+Date and time: 2026-04-20 21:11:20
+Total active processes: 289
+Top CPU process: PID=5068 PROC=yes CPU=99.9%
+Unauthorized processes: 278
+Total ERROR entries across all logs: 24
+Incident classification: CRITICAL
+Classification summary: at least two suspicious indicators were observed simultaneously
+----------------------------------------
+Thresholds:
+- CPU threshold: 50%
+- ERROR threshold per log: 10
+----------------------------------------
+Triggered indicators:
+- high CPU: top process yes (PID=5068) uses 99.9% > threshold 50%
+- unauthorized processes detected: 278
+- log anomaly: at least one mission log exceeds ERROR threshold 10
+----------------------------------------
+Log summary:
+- sat-001-backup.log: 1 ERROR entries
+- sat-001.log: 9 ERROR entries
+- sat-002.log: 14 ERROR entries
+- sat-003.log: 0 ERROR entries
+Most unstable log: sat-002.log (14 ERROR entries)
+----------------------------------------
+Unauthorized process details:
+- PID=2 PROC=kthreadd
+- PID=3 PROC=pool_workqueue_release
+- PID=4 PROC=kworker/R-rcu_gp
+- PID=5 PROC=kworker/R-sync_wq
+- PID=6 PROC=kworker/R-kvfree_rcu_reclaim
+- PID=7 PROC=kworker/R-slub_flushwq
+- PID=8 PROC=kworker/R-netns
+- PID=9 PROC=kworker/0:0-events
+- PID=10 PROC=kworker/0:0H-events_highpri
+- PID=11 PROC=kworker/0:1-i915-unordered
+- PID=13 PROC=kworker/R-mm_percpu_wq
+- PID=14 PROC=ksoftirqd/0
+- PID=15 PROC=rcu_preempt
+- PID=16 PROC=rcu_exp_par_gp_kthread_worker/0
+- PID=17 PROC=rcu_exp_gp_kthread_worker
+- PID=18 PROC=migration/0
+- PID=19 PROC=idle_inject/0
+- PID=20 PROC=cpuhp/0
+- PID=21 PROC=cpuhp/1
+- PID=22 PROC=idle_inject/1
+- PID=23 PROC=migration/1
+- PID=24 PROC=ksoftirqd/1
+- PID=25 PROC=kworker/1:0-kacpi_notify
+- PID=26 PROC=kworker/1:0H-events_highpri
+- PID=27 PROC=cpuhp/2
+- PID=28 PROC=idle_inject/2
+- PID=29 PROC=migration/2
+- PID=30 PROC=ksoftirqd/2
+- PID=32 PROC=kworker/2:0H-events_highpri
+- PID=33 PROC=cpuhp/3
+- PID=34 PROC=idle_inject/3
+- PID=35 PROC=migration/3
+- PID=36 PROC=ksoftirqd/3
+- PID=38 PROC=kworker/3:0H-events_highpri
+- PID=39 PROC=cpuhp/4
+- PID=40 PROC=idle_inject/4
+- PID=41 PROC=migration/4
+- PID=42 PROC=ksoftirqd/4
+- PID=44 PROC=kworker/4:0H-events_highpri
+- PID=45 PROC=cpuhp/5
+- PID=46 PROC=idle_inject/5
+- PID=47 PROC=migration/5
+- PID=48 PROC=ksoftirqd/5
+- PID=50 PROC=kworker/5:0H-events_highpri
+- PID=51 PROC=cpuhp/6
+- PID=52 PROC=idle_inject/6
+- PID=53 PROC=migration/6
+- PID=54 PROC=ksoftirqd/6
+- PID=55 PROC=kworker/6:0-events
+- PID=56 PROC=kworker/6:0H-events_highpri
+- PID=57 PROC=cpuhp/7
+- PID=58 PROC=idle_inject/7
+- PID=59 PROC=migration/7
+- PID=60 PROC=ksoftirqd/7
+- PID=62 PROC=kworker/7:0H-events_highpri
+- PID=63 PROC=kdevtmpfs
+- PID=64 PROC=kworker/R-inet_frag_wq
+- PID=65 PROC=rcu_tasks_kthread
+- PID=66 PROC=rcu_tasks_rude_kthread
+- PID=67 PROC=rcu_tasks_trace_kthread
+- PID=68 PROC=kauditd
+- PID=69 PROC=khungtaskd
+- PID=70 PROC=oom_reaper
+- PID=71 PROC=kworker/u32:1-events_unbound
+- PID=73 PROC=kworker/R-writeback
+- PID=74 PROC=kcompactd0
+- PID=75 PROC=ksmd
+- PID=76 PROC=khugepaged
+- PID=77 PROC=kworker/R-kblockd
+- PID=78 PROC=kworker/R-blkcg_punt_bio
+- PID=79 PROC=kworker/R-kintegrityd
+- PID=80 PROC=irq/9-acpi
+- PID=83 PROC=kworker/R-tpm_dev_wq
+- PID=84 PROC=kworker/R-ata_sff
+- PID=85 PROC=kworker/R-md
+- PID=86 PROC=kworker/R-md_bitmap
+- PID=87 PROC=kworker/R-edac-poller
+- PID=88 PROC=kworker/R-devfreq_wq
+- PID=89 PROC=watchdogd
+- PID=90 PROC=kworker/R-quota_events_unbound
+- PID=91 PROC=kworker/0:1H-i915_cleanup
+- PID=92 PROC=kswapd0
+- PID=93 PROC=ecryptfs-kthread
+- PID=94 PROC=kworker/5:1-events
+- PID=95 PROC=kworker/R-kthrotld
+- PID=96 PROC=irq/122-aerdrv
+- PID=97 PROC=irq/122-pcie-dpc
+- PID=98 PROC=kworker/R-acpi_thermal_pm
+- PID=99 PROC=kworker/u32:3-events_unbound
+- PID=100 PROC=hwrng
+- PID=101 PROC=kworker/4:2-events
+- PID=102 PROC=kworker/R-mld
+- PID=103 PROC=kworker/4:1H-i915_cleanup
+- PID=104 PROC=kworker/R-ipv6_addrconf
+- PID=105 PROC=kworker/R-kstrp
+- PID=106 PROC=kworker/6:1-events
+- PID=107 PROC=kworker/2:1-i915-unordered
+- PID=108 PROC=kworker/7:1-events
+- PID=109 PROC=kworker/3:1-events
+- PID=123 PROC=kworker/R-charger_manager
+- PID=124 PROC=kworker/1:1H-i915_cleanup
+- PID=148 PROC=kworker/7:1H-i915_cleanup
+- PID=151 PROC=kworker/2:1H-kblockd
+- PID=171 PROC=kworker/6:1H-i915_cleanup
+- PID=189 PROC=kworker/5:1H-kblockd
+- PID=190 PROC=kworker/3:1H-i915_cleanup
+- PID=221 PROC=irq/118-ELAN0712:00
+- PID=222 PROC=irq/150-aerdrv
+- PID=223 PROC=irq/150-pcie-dpc
+- PID=226 PROC=kworker/R-nvme-wq
+- PID=227 PROC=kworker/R-nvme-reset-wq
+- PID=228 PROC=kworker/R-nvme-delete-wq
+- PID=229 PROC=kworker/R-nvme-auth-wq
+- PID=288 PROC=jbd2/nvme0n1p5-8
+- PID=289 PROC=kworker/R-ext4-rsv-conversion
+- PID=339 PROC=systemd-journal
+- PID=365 PROC=kworker/u32:4-events_unbound
+- PID=390 PROC=kworker/5:2-mm_percpu_wq
+- PID=393 PROC=systemd-udevd
+- PID=395 PROC=kworker/1:2-events
+- PID=427 PROC=psimon
+- PID=461 PROC=kworker/u32:5-kvfree_rcu_reclaim
+- PID=462 PROC=kworker/2:2-i915-unordered
+- PID=463 PROC=kworker/u32:6-events_unbound
+- PID=464 PROC=kworker/u32:7-flush-259:0
+- PID=466 PROC=kworker/u32:8-flush-259:0
+- PID=469 PROC=kworker/u32:9-events_unbound
+- PID=476 PROC=kworker/7:2-cgroup_free
+- PID=577 PROC=irq/160-mei_me
+- PID=580 PROC=kworker/R-cfg80211
+- PID=591 PROC=kworker/u33:1-rtw_tx_wq
+- PID=592 PROC=kworker/u33:2-i915_flip
+- PID=619 PROC=kworker/3:2-events
+- PID=621 PROC=irq/161-rtw88_pci
+- PID=622 PROC=kworker/R-ttm
+- PID=624 PROC=card1-crtc0
+- PID=625 PROC=card1-crtc1
+- PID=626 PROC=card1-crtc2
+- PID=627 PROC=card1-crtc3
+- PID=702 PROC=kworker/4:3-i915-unordered
+- PID=715 PROC=systemd-oomd
+- PID=747 PROC=systemd-resolve
+- PID=748 PROC=systemd-timesyn
+- PID=870 PROC=anacron
+- PID=878 PROC=avahi-daemon
+- PID=882 PROC=bluetoothd
+- PID=884 PROC=dbus-daemon
+- PID=894 PROC=gnome-remote-de
+- PID=921 PROC=polkitd
+- PID=929 PROC=power-profiles-
+- PID=949 PROC=irq/163-AudioDSP
+- PID=955 PROC=snapd
+- PID=959 PROC=accounts-daemon
+- PID=961 PROC=cron
+- PID=967 PROC=switcheroo-cont
+- PID=972 PROC=systemd-logind
+- PID=978 PROC=thermald
+- PID=985 PROC=udisksd
+- PID=1025 PROC=avahi-daemon
+- PID=1030 PROC=NetworkManager
+- PID=1033 PROC=wpa_supplicant
+- PID=1080 PROC=rsyslogd
+- PID=1178 PROC=ModemManager
+- PID=1193 PROC=upowerd
+- PID=1352 PROC=cupsd
+- PID=1354 PROC=run-cups-browse
+- PID=1355 PROC=run-cupsd
+- PID=1361 PROC=unattended-upgr
+- PID=1416 PROC=gdm3
+- PID=1459 PROC=psimon
+- PID=1540 PROC=rtkit-daemon
+- PID=1653 PROC=krfcommd
+- PID=1735 PROC=cupsd
+- PID=1736 PROC=cups-proxyd
+- PID=1755 PROC=colord
+- PID=2042 PROC=run-cups-browse
+- PID=2151 PROC=cups-browsed
+- PID=2153 PROC=kerneloops
+- PID=2156 PROC=kerneloops
+- PID=2189 PROC=gdm-session-wor
+- PID=2206 PROC=(sd-pam)
+- PID=2216 PROC=pipewire
+- PID=2217 PROC=pipewire
+- PID=2221 PROC=wireplumber
+- PID=2222 PROC=pipewire-pulse
+- PID=2224 PROC=gnome-keyring-d
+- PID=2235 PROC=dbus-daemon
+- PID=2286 PROC=xdg-document-po
+- PID=2290 PROC=xdg-permission-
+- PID=2297 PROC=fusermount3
+- PID=2335 PROC=gdm-wayland-ses
+- PID=2344 PROC=gnome-session-b
+- PID=2422 PROC=gcr-ssh-agent
+- PID=2426 PROC=gnome-session-c
+- PID=2440 PROC=gvfsd
+- PID=2448 PROC=gvfsd-fuse
+- PID=2451 PROC=gnome-session-b
+- PID=2487 PROC=at-spi-bus-laun
+- PID=2488 PROC=gnome-shell
+- PID=2501 PROC=dbus-daemon
+- PID=2573 PROC=at-spi2-registr
+- PID=2596 PROC=gnome-shell-cal
+- PID=2604 PROC=evolution-sourc
+- PID=2615 PROC=gjs
+- PID=2633 PROC=ibus-daemon
+- PID=2636 PROC=gsd-a11y-settin
+- PID=2637 PROC=gsd-color
+- PID=2640 PROC=gsd-datetime
+- PID=2646 PROC=gsd-housekeepin
+- PID=2647 PROC=gsd-keyboard
+- PID=2653 PROC=gsd-media-keys
+- PID=2654 PROC=gsd-power
+- PID=2655 PROC=gsd-print-notif
+- PID=2662 PROC=gsd-rfkill
+- PID=2667 PROC=gsd-screensaver
+- PID=2672 PROC=gsd-sharing
+- PID=2674 PROC=gsd-smartcard
+- PID=2678 PROC=evolution-alarm
+- PID=2681 PROC=gsd-sound
+- PID=2687 PROC=gsd-wacom
+- PID=2696 PROC=gsd-disk-utilit
+- PID=2767 PROC=gvfs-udisks2-vo
+- PID=2789 PROC=goa-daemon
+- PID=2793 PROC=ibus-memconf
+- PID=2794 PROC=ibus-extension-
+- PID=2801 PROC=ibus-portal
+- PID=2851 PROC=goa-identity-se
+- PID=2867 PROC=gsd-printer
+- PID=2868 PROC=evolution-calen
+- PID=2874 PROC=gvfs-goa-volume
+- PID=2886 PROC=gvfs-mtp-volume
+- PID=2892 PROC=gvfs-gphoto2-vo
+- PID=2901 PROC=gvfs-afc-volume
+- PID=2914 PROC=evolution-addre
+- PID=2939 PROC=ibus-engine-sim
+- PID=2962 PROC=dconf-service
+- PID=2971 PROC=gvfsd-trash
+- PID=2993 PROC=xdg-desktop-por
+- PID=3002 PROC=tracker-miner-f
+- PID=3003 PROC=xdg-desktop-por
+- PID=3031 PROC=gjs
+- PID=3057 PROC=xdg-desktop-por
+- PID=3075 PROC=gjs
+- PID=3127 PROC=gvfsd-metadata
+- PID=3139 PROC=snapd-desktop-i
+- PID=3208 PROC=snapd-desktop-i
+- PID=3264 PROC=gnome-terminal-
+- PID=3280 PROC=firefox
+- PID=3371 PROC=crashhelper
+- PID=3480 PROC=forkserver
+- PID=3485 PROC=Socket Process
+- PID=3506 PROC=Privileged Cont
+- PID=3516 PROC=RDD Process
+- PID=3562 PROC=snap
+- PID=3758 PROC=WebExtensions
+- PID=4147 PROC=Utility Process
+- PID=4319 PROC=Isolated Web Co
+- PID=4480 PROC=Isolated Web Co
+- PID=4526 PROC=Isolated Web Co
+- PID=4583 PROC=Web Content
+- PID=4634 PROC=Web Content
+- PID=4694 PROC=Web Content
+- PID=4749 PROC=update-notifier
+- PID=4817 PROC=gvfsd-network
+- PID=4825 PROC=gvfsd-dnssd
+- PID=4923 PROC=(udev-worker)
+- PID=5068 PROC=yes
+- PID=5171 PROC=kworker/u33:3-rtw_tx_wq
+- PID=5277 PROC=kworker/7:0-mm_percpu_wq
+- PID=5317 PROC=kworker/0:2-i915-unordered
+- PID=5328 PROC=kworker/1:1
+- PID=7571 PROC=kworker/4:0-kacpi_notify
+- PID=8855 PROC=kworker/2:0-i915-unordered
+- PID=8864 PROC=kworker/3:0-mm_percpu_wq
+- PID=9319 PROC=kworker/5:0-i915-unordered
+- PID=9353 PROC=kworker/6:2-kacpi_notify
+- PID=9521 PROC=security_state_
+- PID=9573 PROC=runtime_snapsho
